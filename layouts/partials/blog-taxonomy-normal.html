@@ -1,0 +1,53 @@
+<!-- blog main -->
+<section class="blog-main w3-container w3-col l9 m9"> <!-- todo/ text has to be truncated, image text color needs to be changed -->
+      
+  <h2 class="w3-center w3-bottombar w3-border-theme1">Blog posts</h2>
+
+  <ul>
+
+    <!-- article -->
+    {{ range first 5 .Pages }}
+    <li>
+      <aritcle class="blog-article">
+
+          <div class="w3-card w3-row w3-round w3-theme1-light">
+            
+            <!-- article image -->
+            <div class="w3-col l3 m3">
+                <img class="blog-img w3-mobile w3-round" src="{{ .Params.img }}" alt="CHANGE ALT NAME"> <!--CHANGE ALT NAME -->
+            </div>
+            
+            <!-- meta box -->
+            <div class="w3-col l9 m9">
+              <div class="w3-row">
+                 <div class="blog-meta w3-container">
+                    <h2>{{ .Title }}</h2>
+                    <span>{{ .Params.author }}</span>
+                    <span> | </span>
+                    <span>{{ .Date }}</span>
+                    <div class="blog-tags">
+                      <strong>Tags: </strong>
+                      {{ range .Params.tags }}
+                      <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"> {{ . }} {{ end }}</a>                
+                    </div>
+                  </div>
+              </div>
+
+              <!-- blog-text -->
+              <div class="blog-text w3-container w3-row">                
+                <p>{{ .Content | truncate 200 }}</p>
+                <a href="{{ .URL }}">
+                  <button class="w3-button w3-round w3-mobile w3-right w3-large margin-bottom w3-hover-theme1">read more <i class="fa fa-angle-right"></i></button>
+                </a>              
+              </div>
+
+            </div>
+
+          </div>
+        </aritcle>
+      </li>
+      {{ end }}
+  </ul>
+                  
+<!-- end blog-main -->
+</section>

@@ -1,0 +1,53 @@
+<section class="blog-main w3-container w3-col l9 m9">	 
+		
+	<aritcle class="blog-article w3-card w3-theme1-light">
+
+			<header class="w3-section">
+				<h1 class="w3-border-bottom w3-border-theme1">{{ .Title }}</h1>
+
+				<div class="blog-single-meta">
+
+					<span>{{ .Params.author }}</span>
+					<span> | </span>
+					<span>{{ .Date }}</span>
+					<div class="blog-tags">
+						<strong>Tags: </strong>
+						{{ range .Params.tags }}
+						<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"> {{ . }} {{ end }}</a>
+					</div>						
+				</div>
+
+			</header>
+
+			<div class="blog-single-img">
+				<img class="blog-article-img w3-mobile w3-round" src="{{ .Params.img }}" alt="CHANGE ALT NAME"> <!--CHANGE ALT NAME -->
+			</div> 
+			
+			<div class="blog-text">
+				<p>{{ .Content  }}</p>
+			</div>
+
+			<div class="blog-single-social w3-container">
+
+				<div class="w3-bar">
+			      <a href="#" class="w3-bar-item w3-btn w3-btn-theme w3-hover-theme1 w3-round w3-ripple w3-text-theme3 w3-padding-small w3-xlarge w3-right"><i class="fab fa-facebook-f"></i></a>
+			      <a href="#" class="w3-bar-item w3-btn w3-btn-theme w3-hover-theme1 w3-round w3-ripple w3-text-theme3 w3-padding-small w3-xlarge w3-right"><i class="fab fa-twitter"></i></a>
+				</div>		
+								
+			</div>
+
+	</aritcle>
+
+	<!-- comments -->
+	<div class="blog-single-comments">
+
+		<h3 class="w3-border-top w3-border-theme1 w3-section">Comments</h3>
+
+		<div class="w3-border-black">
+			<!-- INSERT DISQUS TEMPLATE HERE -->
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis incidunt ipsam neque consectetur impedit rerum non nam quibusdam voluptate, placeat ad vero, minus asperiores, est, nostrum quae. Libero, doloremque, perspiciatis </p>
+		</div>
+	</div>
+
+<!-- end column -->
+</section>

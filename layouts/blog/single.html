@@ -1,0 +1,25 @@
+{{ define "head"}}
+  {{ partial "head" . }}
+{{ end }}
+
+{{ define "header" }}
+  {{ partial "header" . }}
+{{ end }}
+
+{{ define "main" }}
+<!-- version mobile -->
+<div class="blog-single-mobile-display">		
+	{{ partial "blog-post-mobile.html" . }}
+</div>
+
+<!-- version normal -->
+<div class="blog-normal-display w3-row w3-content w3-hide-small">
+	{{ partial "blog-post-normal.html" . }}
+	{{ partial "blog-home-normal-side.html" . }}
+</div>
+
+{{ end }}
+
+{{ define "footer"}}
+  {{ partial "footer" . }}
+{{ end }}

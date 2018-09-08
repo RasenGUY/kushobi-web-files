@@ -1,0 +1,40 @@
+    <!-- side bar -->
+    <div class="w3-col l3 m3 blog-sidebar">
+
+      <!-- blog search bar -->
+      <div class="w3-container w3-theme blog-search w3-round w3-text-theme1">
+
+        <h3 class="w3-center" >Search for posts!</h3>
+        <input class="w3-input w3-border w3-round w3-section" type="text" name="subscribe-search" method="get" placeholder="Search blog repository ... ">
+        <br>
+
+      </div>
+
+      <!-- blog-recent-posts -->
+      <div class="blog-recent-posts w3-container w3-round w3-text-theme1 w3-theme w3-section">
+        <h3 class="w3-center">Recent posts</h3> <!-- DONT FORGET TO UNDERLINE THIS -->
+        <ul>
+          {{ range first 6 (where .Site.Pages "Section" "blog") }}
+          <a href="{{ .URL }}"><span><li><h4>{{ .Title }}</h4></li></span></a>
+          {{ end }}
+        </ul>
+      </div>
+
+      <!-- blog-subscribe -->
+      <div class="blog-subscribe w3-container w3-theme w3-mobile w3-text-theme1 w3-round">
+
+        <form action=""> <!--form still needs to be given an action-->
+
+          <h3 class="w3-center">Subscribe to stay updated</h3>
+
+          <input class="w3-input w3-border w3-mobile w3-round" type="text" placeholder="Enter your email here...">
+
+          <button class="w3-button w3-mobile w3-round w3-section w3-block w3-hover-theme1 w3-ripple"><h5>Subscribe  <i class="fa fa-angle-right"></i></h6></button> <!---make sub button maximum width -->      
+        
+        </form>
+
+      <!-- end blog-subscribe -->
+      </div>
+
+  <!-- end sidbar column -->
+  </div>
