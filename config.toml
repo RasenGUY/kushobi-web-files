@@ -1,7 +1,7 @@
-baseURL = "https://rasenguy.github.io/kushobi"
+baseURL = "/"
 languageCode = "en-us"
 title = "Kushobi Voodoo Ninja In Training"
-theme="kushobi-hugo-responsive-theme"
+theme=""
 pluralizeListTitles = "false"
 
 [taxonomies]

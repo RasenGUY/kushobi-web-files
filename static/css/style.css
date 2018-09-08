@@ -139,7 +139,7 @@
 
 /*--subscribe--*/
 .blog-search form input {
-	background-image: url(../img/widgets/fa-fa-search.svg);
+	background-image: url(/img/widgets/fa-fa-search.svg);
 	background-repeat: no-repeat;
 	background-size: 1.5rem;
 	background-position: 0.5rem;
