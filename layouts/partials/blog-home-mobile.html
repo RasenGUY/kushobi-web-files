@@ -41,7 +41,7 @@
 
                 <div class="w3-display-container">
 
-                  <img class="blog-article-img w3-mobile w3-round" src="{{ .Params.img }}" alt="{{ .Title }}"> <!--CHANGE ALT NAME -->
+                  <img class="blog-article-img w3-mobile w3-round" src="{{ .Params.img | absURL }}" alt="{{ .Title }}"> <!--CHANGE ALT NAME -->
 
                   <h1 class="w3-display-topleft">{{ .Title }}</h1>
 
@@ -64,7 +64,7 @@
 
                 <div class="w3-container w3-center">
                   
-                    <a href="{{ .URL | relLangURL  }}"><button class="w3-button w3-round w3-mobile w3-hover-theme1">read more <i class="fa fa-angle-right"></i></button></a>
+                    <a href="{{ .URL }}"><button class="w3-button w3-round w3-mobile w3-hover-theme1">read more<i class="fa fa-angle-right"></i></button></a>
                             
                 </div>
 

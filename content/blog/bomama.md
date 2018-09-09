@@ -3,7 +3,7 @@ title: "Bomama"
 date: 2018-04-11T13:57:56+02:00
 tags: ["bananas"]
 author: "Fernandp"
-img: "/img/blog/pbh1.jpg"
+img: "img/blog/pbh1.jpg"
 ---
 
 

@@ -3,7 +3,7 @@ title: "Post2"
 date: 2018-04-07T22:22:02+02:00
 tags: ["apple", "horses"]
 author: "Author 2"
-img: "/img/blog/pbh2.jpg"
+img: "img/blog/pbh2.jpg"
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus accusamus suscipit nulla, voluptates magni. Animi voluptate rem debitis accusamus perspiciatis non, error voluptates sunt voluptatum recusandae temporibus obcaecati laudantium aliquid nisi nobis dolor fugit ipsa, dolores mollitia na	tus libero. Molestias quo, neque numquam aliquam totam, suscipit veritatis? Doloremque accusamus nam alias iusto eveniet, blanditiis reiciendis commodi aspernatur dignissimos omnis, pariatur reprehenderit enim dolor eius beatae modi aut! Quaerat aliquid itaque cupiditate, libero aliquam assumenda dolore voluptatum, maiores iusto laborum unde!
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit similique, quibusdam voluptas suscipit, fugit aperiam eaque minima aliquam, assumenda natus quo minus saepe culpa ea beatae debitis? Quae quis voluptate fugiat ducimus. A ad provident alias eos et nesciunt repellendus autem incidunt, dicta fugiat temporibus voluptates. Temporibus suscipit quisquam quas laboriosam optio commodi at adipisci iste culpa velit minus voluptatem dignissimos aspernatur quibusdam unde, omnis veritatis ipsum mollitia quae, id? Error ducimus accusamus officia ex, id perspiciatis voluptatibus aliquid ad iure ut aliquam rem hic nobis laborum corporis fugit cupiditate ipsa est eius mollitia nulla impedit cum architecto. Nesciunt, iure.

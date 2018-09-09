@@ -14,7 +14,7 @@
             
             <!-- article image -->
             <div class="w3-col l3 m3">
-                <img class="blog-img w3-mobile w3-round" src="{{ .Params.img }}" alt="CHANGE ALT NAME"> <!--CHANGE ALT NAME -->
+                <img class="blog-img w3-mobile w3-round" src="{{ .Params.img | relURL }}" alt="CHANGE ALT NAME"> <!--CHANGE ALT NAME -->
             </div>
             
             <!-- meta box -->
